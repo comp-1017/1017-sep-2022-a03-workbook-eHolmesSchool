@@ -13,6 +13,17 @@ body{
     padding: 0;
 }
 
+h1 {
+    padding:48px;
+    color: #696969;
+    border-bottom: 1px solid #dedede
+}
+
+section {
+    font-family: arial;
+    width: 800px;
+    margin:  48px;
+}
 
 
 /*********
@@ -58,7 +69,6 @@ footer ul{
 }
 
 
-
 /*******
 Child selectors
 
@@ -69,3 +79,50 @@ The desc
 main p{
     font-style: italic;
 }
+
+/*******
+Psuedo classes 
+
+Attached to classes
+
+on html a class is specified within a html tag
+
+class = class "user-name"
+
+NOTE it does Not use a seperating comma
+
+you can have multiple classes on one html tag. 
+syntax   tag class="use-name1 user-name2"
+
+******/
+
+.menu-items{
+    font-family:courier, sans-serif ;
+    list-style-type:none;
+    width: 600px;
+    padding: 24px;
+    border-left: 5px solid red;
+    background-color: #f4f4f4;
+    margin-left: 24px;
+}
+
+/********************************
+
+Not all html elements have pre-coded psuedo classes
+
+the anchor tag has FOUR pre-coded psuedo classes
+The order in which the anchor tag psuedo classes are specified within your CSSis IMPORTANT is you're gonna override them
+when you override the psuedoclass, you are overrideing the defaults of the class
+
+a:link
+a:hover       used when your cursor hovers over the anchor
+a:visited     used after you have gone to the anchor link
+a:
+********************************/
+
+
+/****
+
+
+
+***/
