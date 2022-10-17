@@ -1,0 +1,29 @@
+/*************************
+Different types of coding blocks
+
+element selector
+body
+
+
+*************************/
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*********
+if you have the same rules for multiple element selectors you may group them as a comma separated list
+The group may be coded on one physical line or over multiple lines
+
+If you repeat the element selector in your css file, any additional rules sre combined with previously specified rules. If you re-code a previously specified rule then the new rule overrides the previous rule. Last Rule Wins
+****/
+
+
+body{
+    font-family: verdana ;
+    color: #111111;
+}
