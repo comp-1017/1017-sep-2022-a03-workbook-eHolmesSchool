@@ -27,3 +27,45 @@ body{
     font-family: verdana ;
     color: #111111;
 }
+
+
+
+/*********
+Descendant selectors
+
+A descendant selector is a set  of element selectors when used in your html, follow immediately one after another..
+This can be used to isolate a particular selector from other occurances of the same selector on the page
+
+The descendant has two OR MORE element selectors
+
+
+this would color ALL unordered lists
+ul{
+    background-color: lightblue;
+}
+
+this ONLY gets ULs in the footer area   THERE IS NO COMMA OR ANYTHING
+ul{
+    background-color: lightblue;
+}
+
+this technique will over ride generic styles
+****/
+
+
+footer ul{
+    background-color: lightblue;
+}
+
+
+
+/*******
+Child selectors
+
+The desc
+
+******/
+
+main p{
+    font-style: italic;
+}
