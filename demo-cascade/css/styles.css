@@ -1,0 +1,87 @@
+footer {
+background-color:bisque;
+color:yellow;
+}
+
+
+ul {
+    background-color:firebrick
+}
+nav ul{
+    background-color: #ddd;
+}
+
+
+/******
+
+
+A class selector gets a value of 10
+An ID Selector gets a value of 100
+
+SPECIAL NOTE: ALL Inline styling gets a value of 1000
+Specificity decisions are based on the value of the selector
+
+
+If the specificity of conflicting is the same then "the last coded rule wins"
+
+*****/
+
+footer, footer a{
+    color:white;
+}
+
+
+/******
+
+concerned both nav and li were affected
+
+Solutions: use a descendant selector (nav li > li)
+use a class selector as a targetted class
+*******/
+
+.li-border{
+    border-bottom:5px solid red;
+}
+
+nav ul li {
+
+}
+
+nav ul li a{
+
+}
+
+/******
+
+Classes:
+Syntax is .user-name { rules }
+you are NOT to use the element name
+username must be meaningful and may include the element name
+classes can be attached to any element
+classes are independant of an element
+on html page, to use <element>
+
+
+
+PSUEDO CLASSES
+attached to Elements
+
+the order in which you code your psuedo classes for the anchor tag is extremely important 
+ex. the anchor tag: 
+a.link   unused link
+a.hover  used when your cursor hovers over the anchor tag
+a.visited  used when the link has been clicked on previously
+a.active  used when user is mid click
+*******/
+
+nav ul li a:hover{
+    color: blue;
+    font-weight: bold;
+}
+
+
+nav ul li a:active{
+    color: red;
+    font-weight: bold;
+}
+
