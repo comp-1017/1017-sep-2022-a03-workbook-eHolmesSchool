@@ -3,6 +3,7 @@ body {
 }
 
 .container {
+	background-color: red;
 	margin:0 auto;
 	width:960px;
 	font-size: 100%;
@@ -35,12 +36,31 @@ nav{
 	background-color: peru;
 }
 
-/******
 
-***/
 
+main{
+	
+	margin-top: 24px;
+	background-color: bisque;
+	padding: 24px
+	
+}
 header{
 	height: 450px;
 	margin-top: 24px;
 	background-color: aquamarine
+}
+
+/******
+ width = left margin + left border + left padding + content + right padding + right border + right margin
+ width = 30 + 2 + 0 + content + 0 + 2 + 30
+ width = content + 64
+***/
+
+main section{
+	border: 2px solid black;
+	margin: 30px;
+	height: 20px;
+	background-color: white;
+	width: 896;
 }
