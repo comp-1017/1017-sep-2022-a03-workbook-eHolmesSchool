@@ -7,8 +7,88 @@ body {
     width: 960px;
     margin: 0 auto;
     font-size: 100%;
-    line-height: 1.5
+    line-height: 1.5;
 }
+
+main {
+    border: 30px;
+    width:960;
+    background-color:lightgrey;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+/*** footer {
+    border: 30px;
+    width:960;
+    background-color:darkgrey;
+    display:flex;
+
+}
+***/
+/***
+
+The Default display of elemnts is called Stack. To get your elements on the same line, we use something called FlexBox (in this course at least). 
+To Invoke Flexbox, Use the rule Display:flex
+FlexBox attempts to place ALL elements within its immediate specified container area on the same line.
+
+Immediate? What??  This means the Next Level of elements (we can put elements within each other, immediate means "at the nextlevel below") 
+Im pretty sure this just means we are gonna be putting a FlexBox "around" these elements
+
+FlexBox will automatically adjust measurements to get all elemnts to appear on the same line REGARDLESS of the physical width set for those elements.
+
+I dont want ALL elements on the same line having their  measurements changed
+What Do?????? Solution!! alter the default wrapping for FlexBox (which is nonde at default)
+Rule is: FlexWrap: wrap;
+this will place as many elements as possible on a single row WITHOUT ADJUSTING MEASUREMENTS of elements
+Any leftover elements will wrap to the following line UNTIL ALL elements have been displayed
+
+WRNING!!!!! FlexWrap affects a flex display area. Without the display:flex rule, flexwrap is Meaningless
+
+Double Warning!!! Flexbox will change things,,, such as  Margin Collapse (The top & bottom margins of boxes placed below each other with FlexBox will stack instead of squishing together)
+***/
+
+/***
+wihtout text, these boxes have no dimensions. we need to manually input it 
+Width of each box is set to fit the final given image  PAGE WIDTH = 960 
+
+margin-border-padding-content-padding-border-margin   border-padding-content-padding-border-margin
+
+width= (960 - (margin(30) * 4))/3
+960-120 = 840
+840/3 = 280
+***/
+
+main > div {
+    height:200px;
+    width:280px;
+}
+.red-paint { 
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:0px;
+    background-color:red;
+}
+
+.blue-paint{
+    margin:30px 0px 0px 30px; /*** NO Commas between Numbers ***/
+    background-color:aqua;
+}
+
+.yellow-paint{
+    margin:30px 0px 0px 30px; /*** NO Commas between Numbers ***/
+    background-color:yellow;
+}
+
+.black-paint{
+    height:50px;
+    width:900px;
+    margin:30px 0px 30px 30px; /*** NO Commas between Numbers ***/
+    background-color:black;
+}
+/**30 + 0 + 0 + content + 0 + 0 + 0 + 30 
+**/
 
 
 /*CLEAR FIX SOLLUTION*/
