@@ -9,3 +9,12 @@ body {
 	line-height: 1.5;
 }
 
+header{
+	height: 70px;
+	background-color:white;
+	border-bottom: 1px solid #959372;
+}
+
+header > h1 {
+	display:none;
+}
