@@ -18,3 +18,9 @@ header{
 header > h1 {
 	display:none;
 }
+
+header >img{
+	margin:14px;
+}
+
+
