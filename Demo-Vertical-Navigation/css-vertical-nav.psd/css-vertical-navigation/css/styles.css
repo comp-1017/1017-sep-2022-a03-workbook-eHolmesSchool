@@ -31,14 +31,25 @@ header >img{
 	height: 420px; /*480px - 60 px margin*/
 }
 
-.banner > h2 {
+.banner  h2 {
 	font-family: 'Alegreya', serif;
 	font-size: 36px;
 	color: #f9ea4f;
 }
 
-.banner > a {
+/*remove default link styles*/
+.banner  a {
 	text-decoration: none;
 	color: #faf9f8;
 	font-size: 18px;
+}
+
+/* :hover psuedo-class adds styles only when the mouse is over the text/thing*/
+.banner  a:hover{
+	color: #f9ea4f;
+}
+
+/*target the li to add spacing and other styles*/
+.banner li {
+	line-height:40px;
 }
